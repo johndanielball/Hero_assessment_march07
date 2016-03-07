@@ -1,0 +1,23 @@
+<!--Provide a link for the user to navigate to the Create New Hero view-->
+<button><a href="#/hero">Create New Hero</a></button>
+
+<select ng-change="filter(selected)" ng-model="selected" ng-options="power for power in powers"></select>
+<div ng-repeat="hero in heroes">
+  <div>
+    <label>Alias: </label>
+    <label>{{hero.alias}}</label>
+  </div>
+  <div>
+    <label>First Name: </label>
+    <label>{{hero.first_name}}</label>
+  </div>
+  <div>
+    <label>Last Name: </label>
+    <label>{{hero.last_name}}</label>
+  </div>
+  <div>
+    <label>Super Power: </label>
+    <label>{{hero.power_name}}</label>
+  </div>
+  <button ng-click="remove">Remove Hero</button>
+</div>

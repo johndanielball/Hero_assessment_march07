@@ -1,0 +1,26 @@
+<div>
+  <!--Provide a link for the user to navigate to the Heroes view-->
+  <button><a href="#/heroes">View Heroes</a></button>
+
+  <div>
+    <label for="alias">Alias:</label>
+    <input type="text" name="alias" ng-model="alias"/>
+  </div>
+  <div>
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" ng-model="first_name"/>
+  </div>
+  <div>
+    <label for="last_name">Last name</label>
+    <input type="text" name="last_name" ng-model="last_name"/>
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <input type="text" name="city" ng-model="city"/>
+  </div>
+  <div>
+    <label for="power_name">Power Name:</label>
+    <select ng-model="selected" ng-options="power as power for power in powers"></select>
+  </div>
+  <button ng-click="submit()">Create New Hero</button>
+</div>
